@@ -60,7 +60,7 @@ class Welcome extends CI_Controller
             $post->save();
         }
 
-        redirect('Welcome/index');
+        redirect('Welcome/tampil');
     }
 
     public function hapus($id)
@@ -84,7 +84,7 @@ class Welcome extends CI_Controller
 
         $this->_createView('update', ['post' => $post, 'users' => $users, 'jenis' => $jenis]);
     }
-    
+
 
     public function update($id)
     {
